@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .mainContainer {
+    border: 2px solid black;
+    width: 90%;
+    margin: auto;
+    padding: 20px 50px;
+  }
+  
+  .mainContainer .mainHeading {
+    /* background-color: grey; */
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .selectedShowContainer {
+    /* background-color: aqua; */
+    padding: 5px;
+  }
+  
+  /*************** TOP STYLING  ***********/
+  .selectedShowContainer .top {
+    /* background-color: violet; */
+    margin-bottom: 20px;
+  }
+  
+  /************* BUTTOM STYLING ************/
+  .selectedShowContainer .buttom {
+    /* background-color: orange; */
+  }
+  
+  /********************************************************/
+  /******************** MEDIA QUERIES *********************/
+  /********************************************************/
+  /* For extremely small screen devices (595px and below) */
+  @media only screen and (max-width: 595px) {
+    .mainContainer {
+      width: 97%;
+      padding: 20px;
+    }
+    .mainContainer .mainHeading {
+      font-size: 25px;
+    }
+  
+    /* Tooopp wala */
+    .selectedShowContainer .top .left {
+      /* background-color: pink; */
+    }
+  
+    .selectedShowContainer .top .left .imageContainer {
+      width: 98%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  
+    .selectedShowContainer .top .left .imageContainer img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+  
+    .selectedShowContainer .top .right {
+      /* background-color: crimson; */
+    }
+  
+    .selectedShowContainer .top .right h2 {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 15px;
+    }
+  
+    .selectedShowContainer .top .right p {
+      display: flex;
+      justify-content: flex-start;
+      text-align: justify;
+    }
+  
+    /* Butttommm wala */
+    .selectedShowContainer .buttom {
+      /* background-color: pink; */
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .selectedShowContainer .buttom .heading {
+      /* background-color: magenta; */
+      width: 98%;
+      margin: auto;
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .selectedShowContainer .buttom .left {
+      width: 100%;
+    }
+  
+    .selectedShowContainer .buttom .right {
+      width: 100%;
+    }
+  
+    .selectedShowContainer .buttom .left .infoContainer {
+      /* background-color: chartreuse; */
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .selectedShowContainer .buttom .left .info {
+      /* background-color: aqua; */
+      width: 42%;
+      margin-bottom: 20px;
+    }
+  
+    .selectedShowContainer .info .infoHeading {
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .selectedShowContainer .info .infoDetail {
+      display: flex;
+      justify-content: flex-start;
+      color: grey;
+    }
+  
+    .selectedShowContainer .buttom .right .starrings {
+      /* background-color: lightcoral; */
+    }
+  
+    .selectedShowContainer .buttom .right .starrings .detailContainer {
+      /* background-color: lightgreen; */
+      margin: 5px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .selectedShowContainer
+      .buttom
+      .right
+      .starrings
+      .detailContainer
+      .imageContainer {
+      width: 110px;
+      height: 110px;
+      border: 2px solid black;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+  
+    .selectedShowContainer
+      .buttom
+      .right
+      .starrings
+      .detailContainer
+      .personDetail
+      p {
+      /* background-color: aqua; */
+      width: 200px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  
+  /* Small screen devices (600px and above) */
+  @media only screen and (min-width: 600px) {
+    .mainContainer {
+      width: 97%;
+      padding: 20px;
+    }
+    .mainContainer .mainHeading {
+      font-size: 25px;
+    }
+  
+    /* Tooopp wala */
+    .selectedShowContainer .top .left {
+      /* background-color: pink; */
+    }
+  
+    .selectedShowContainer .top .left .imageContainer {
+      width: 350px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  
+    .selectedShowContainer .top .left .imageContainer img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+  
+    .selectedShowContainer .top .right {
+      /* background-color: crimson; */
+    }
+  
+    .selectedShowContainer .top .right h2 {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 15px;
+    }
+  
+    .selectedShowContainer .top .right p {
+      display: flex;
+      justify-content: flex-start;
+      text-align: justify;
+    }
+  
+    /* Butttommm wala */
+    .selectedShowContainer .buttom {
+      /* background-color: pink; */
+      min-height: 100px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .selectedShowContainer .buttom .heading {
+      /* background-color: magenta; */
+      width: 98%;
+      margin: auto;
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .selectedShowContainer .buttom .left {
+      width: 100%;
+    }
+  
+    .selectedShowContainer .buttom .right {
+      width: 100%;
+    }
+  
+    .selectedShowContainer .buttom .left .infoContainer {
+      /* background-color: chartreuse; */
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .selectedShowContainer .buttom .left .info {
+      /* background-color: aqua; */
+      width: 42%;
+      margin-bottom: 20px;
+    }
+  
+    .selectedShowContainer .info .infoHeading {
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .selectedShowContainer .info .infoDetail {
+      display: flex;
+      justify-content: flex-start;
+      color: grey;
+    }
+  
+    .selectedShowContainer .buttom .right .starrings {
+      /* background-color: lightcoral; */
+    }
+  
+    .selectedShowContainer .buttom .right .starrings .detailContainer {
+      /* background-color: lightgreen; */
+      margin: 5px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .selectedShowContainer
+      .buttom
+      .right
+      .starrings
+      .detailContainer
+      .imageContainer {
+      width: 110px;
+      height: 110px;
+      border: 2px solid black;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+  
+    .selectedShowContainer
+      .buttom
+      .right
+      .starrings
+      .detailContainer
+      .personDetail
+      p {
+      /* background-color: aqua; */
+      width: 200px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  
+  /* Medium screen devices (768px and above) */
+  @media only screen and (min-width: 768px) {
+  }
+  
+  /* Big screen devices (889px and above) */
+  @media only screen and (min-width: 889px) {
+    .mainContainer {
+      width: 97%;
+      padding: 20px;
+    }
+    .mainContainer .mainHeading {
+      font-size: 25px;
+    }
+  
+    /* Tooopp wala */
+    .selectedShowContainer .top {
+      display: flex;
+    }
+    .selectedShowContainer .top .left {
+      /* background-color: pink; */
+    }
+  
+    .selectedShowContainer .top .left .imageContainer {
+      width: 300px;
+      margin-right: 30px;
+    }
+  
+    .selectedShowContainer .top .left .imageContainer img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+  
+    .selectedShowContainer .top .right {
+      /* background-color: crimson; */
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 60%;
+    }
+  
+    .selectedShowContainer .top .right h2 {
+      font-size: 22px;
+      font-weight: 400;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 15px;
+    }
+  
+    /* Butttommm wala */
+    .selectedShowContainer .buttom {
+      /* background-color: pink; */
+      min-height: 100px;
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+    }
+  
+    .selectedShowContainer .buttom .heading {
+      /* background-color: magenta; */
+      width: 98%;
+      margin: auto;
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .selectedShowContainer .buttom .left {
+      max-width: 48%;
+      margin-bottom: 10px;
+    }
+  
+    .selectedShowContainer .buttom .right {
+      max-width: 48%;
+    }
+  
+    .selectedShowContainer .buttom .left .infoContainer {
+      /* background-color: chartreuse; */
+      padding: 10px;
+      display: block;
+    }
+  
+    .selectedShowContainer .buttom .left .info {
+      /* background-color: aqua; */
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .selectedShowContainer .buttom .left .info p {
+      width: 200px;
+      height: 90px;
+      border-bottom: 2px solid black;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .selectedShowContainer .info .infoHeading {
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .selectedShowContainer .info .infoDetail {
+      display: flex;
+      justify-content: flex-start;
+      color: grey;
+    }
+  
+    .selectedShowContainer .buttom .right .starrings {
+      /* background-color: lightcoral; */
+    }
+  
+    .selectedShowContainer .buttom .right .starrings .detailContainer {
+      /* background-color: lightgreen; */
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      height: 109px;
+    }
+  
+    .selectedShowContainer
+      .buttom
+      .right
+      .starrings
+      .detailContainer
+      .imageContainer {
+      width: 90px;
+      height: 90px;
+      border: 2px solid black;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+  
+    .selectedShowContainer
+      .buttom
+      .right
+      .starrings
+      .detailContainer
+      .personDetail {
+      /* background-color: magenta; */
+      /* padding: 10px; */
+      display: flex;
+    }
+  
+    .selectedShowContainer
+      .buttom
+      .right
+      .starrings
+      .detailContainer
+      .personDetail
+      p {
+      /* background-color: aqua; */
+      width: 200px;
+      display: flex;
+      justify-content: flex-start;
+      font-size: 18px;
+    }
+  }
+  
